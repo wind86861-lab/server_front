@@ -1,0 +1,57 @@
+.premium-page-container {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.premium-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f1f5f9;
+}
+
+.premium-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.profile-overview-card {
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+}
+
+/* Customizing MUI TextField styles somewhat globally for the profile page */
+.premium-page-container .MuiOutlinedInput-root {
+    border-radius: 8px;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
+}
+
+.premium-page-container .MuiOutlinedInput-root:hover {
+    background-color: #f1f5f9;
+}
+
+.premium-page-container .MuiOutlinedInput-root.Mui-focused {
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.premium-page-container .MuiOutlinedInput-notchedOutline {
+    border-color: #e2e8f0;
+}
+
+.premium-page-container .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #cbd5e1;
+}
+
+.premium-page-container .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #3b82f6;
+}
